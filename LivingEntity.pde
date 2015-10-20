@@ -50,5 +50,7 @@ class LivingEntity implements ITimeable {
      return false;
   }
   
-
+  public float getLifeFactor(){
+    return lifeFactor;
+  }
 }
