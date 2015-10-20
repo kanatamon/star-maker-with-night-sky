@@ -47,6 +47,11 @@ public static class SkyManager{
       stars[i].update();
     }
     
+    // draw Connectors 
+    for(int i = 0; i < Connectors.length; i++){
+      Connectors[i].update();
+    }
+    
     // update state and main system
     updateIdleState();
     updateDragingState();
@@ -54,14 +59,13 @@ public static class SkyManager{
     updateConnectorState();
     
     updateCollection();
-    println(currentState);
+    //println(currentState);
   }
   
   public static void display(){
     
     // draw Connectors 
     for(int i = 0; i < Connectors.length; i++){
-      Connectors[i].update();
       Connectors[i].display();
     }
     

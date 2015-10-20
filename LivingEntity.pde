@@ -9,7 +9,7 @@ class LivingEntity implements ITimeable {
     t = 0.0f;
     age = millis();
     life = LivingState.Birth;
-    delay = random(4000f,6000f);
+    delay = 5000f;
     lifeFactor = 1f;
   }
   
@@ -40,7 +40,7 @@ class LivingEntity implements ITimeable {
       
     life = LivingState.Death;
     age = millis();
-    delay = random(4000f,6000f);
+    delay = 5000f;
   }
   
   public boolean isDead(){
